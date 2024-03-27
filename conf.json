@@ -1,0 +1,18 @@
+{
+  "listeners": [
+    {
+      "url": "o.lb.local",
+      "targetGroup": {
+        "name": "target-group-1",
+        "ingressPort": 443,
+        "healthCheckInterval": 10,
+        "healthCheckEndpoint": "/health",
+        "targets": [
+          "https://jsonplaceholder.typicode.com/todos/1",
+          "https://jsonplaceholder.typicode.com/todos/2",
+          "https://jsonplaceholder.typicode.com/todos/3"
+        ]
+      }
+    }
+  ]
+}
